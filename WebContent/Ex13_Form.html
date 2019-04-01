@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>개발자 필수 태그 (암기)</title>
+</head>
+<body>
+	<form action = "Ex13_Login.jsp" method = "post">
+		<input type ="text" name="userid" ><br>
+		<input type ="password" name="userpwd"><br>
+		<!--  <input type ="submit" value="전송하기">-->
+		<input type = "image" src= "images/1.jpg" style = "width : 700px ;height : 500px"> <!-- 이미지도 교통수단 가능 -->
+		<input type ="reset" value="취소하기">
+		<!-- 
+			1. form태그는 전송을 담당하는 태그 ( 교통수단 ) 
+				(웹서버(Tomcat) 데이터 전송)
+				네이버 >> 회원가입 버튼 >> 정보입력 >> 전송
+				
+			2. form 교통수단 ( 운전기사 : submit )
+				2.1 input type = "submit" 전송담당
+				2.2 input type = "image" 내부적으로 submit
+				2.3 input type = "button" >> javaScript (document.form.submit())
+			
+			3. form 태그에서 get 방식은 불필요 ???
+				<a href = "login.jsp?num-100">  글 상세 </a>  -> get방식
+				링크통해서 서버에 데이터 전송 .. (get방식)
+				get >> jsp?변수=데이터&변수 
+			
+			
+			form 교통수단
+			두가지 : 배(method = "get")	, 비행기(method = "post")
+			목적지 : Ex13_login.jps (서버에 page주소)
+			
+			post : 정보를 숨겨서 가져감
+			get : 정보를 노출함
+		 -->
+	</form>
+
+</body>
+</html>
